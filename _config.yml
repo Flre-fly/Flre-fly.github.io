@@ -69,14 +69,14 @@ content:
           #github #springboot #aws #java11 #mysql #spring-data-jpa #rest-docs
           #h2 #github-action #jwt #gradle #rest-assred
         description: | # this will include new lines to allow paragraphs
-          - 프로젝트 기획 및 설계, DB설계, API개발 및 인수테스트, 단위테스트 진행, 쿼리 작성 및 테스트, 배포 자동화, 문서화
+          프로젝트 기획 및 설계, DB설계, API개발 및 인수테스트, 단위테스트 진행, 쿼리 작성 및 테스트, 배포 자동화, 문서화
 
           1) 성능최적화
           - 프로젝트가 실제 서비스된다고 가정하고 특정 수준에서의 성능을 최대한으로 개선  
 
-          1.1) 쿼리 튜닝을 통한 조회 성능 향상 
-          - 커버링 인덱스 도입·필요 없는 조인 제거 
-          - 400ms → 50ms (8배) 응답시간 개선 
+          <br> 1.1) 쿼리 튜닝을 통한 조회 성능 향상 
+          <br> - 커버링 인덱스 도입·필요 없는 조인 제거 
+          <br> - 400ms → 50ms (8배) 응답시간 개선 
 
           1.2) 캐시 도입으로 조회 성능 향상 
           - 스케일 아웃 시 서버 각각이 독립적으로 세션 저장소를 가지게 됨으로써 정합성 문제 발생 
