@@ -69,54 +69,7 @@ content:
           #github #springboot #aws #java11 #mysql #spring-data-jpa #rest-docs
           #h2 #github-action #jwt #gradle #rest-assred
         description: | # this will include new lines to allow paragraphs
-          프로젝트 기획 및 설계, DB설계, API개발 및 인수테스트, 단위테스트 진행, 쿼리 작성 및 테스트, 배포 자동화, 문서화
-
-          1) 성능최적화
-          - 프로젝트가 실제 서비스된다고 가정하고 특정 수준에서의 성능을 최대한으로 개선  
-
-          <p>1.1) 쿼리 튜닝을 통한 조회 성능 향상 
-          <p>- 커버링 인덱스 도입·필요 없는 조인 제거 
-          <p>- 400ms → 50ms (8배) 응답시간 개선 
-
-          1.2) 캐시 도입으로 조회 성능 향상 
-          - 스케일 아웃 시 서버 각각이 독립적으로 세션 저장소를 가지게 됨으로써 정합성 문제 발생 
-          - 정합성 문제의 해결방안과 캐시 도입 과정에서의 적정 캐시 만료시간에 대해 조사 
-          - 대략 10배의 성능 향상 
-
-          1.3) 로드밸런싱을 통한 고가용성 보장과 높은 CPU 점유율 해결 
-          - 고가용성 보장과 높은 트래픽에서의 CPU 높은 점유율 해결을 위해 로드밸런싱 도입 
-          - CPU사용률 70% → 20% 감소  Mean Test Time값 대략 6배 감소
-
-
-          2) 버그를 최소화한 프로젝트 
-
-          2.1) 테스트 코드의 복잡성을 해결하기 위한 리팩토링 
-          - 중복되는 상수를 묶어서 공통으로 관리하는 클래스 도입 
-          - 상속을 활용하여 공통로직을 부모에서 처리 
-          - 가독성 향상, 재활용되는 메서드·상수 수 증가 
-
-          2.2) 동시성 문제 해결 
-          - 동시성문제가 발생할 수 있는 코드들을 조사해보고 
-          - 데이터베이스에 유니크 제약조건을 추가하는 방안으로 문제 해결 
-          - 테스트 커버리지 81% 
-
-
-          3) 협업하기 좋은 환경 구성하기 
-
-          3.1) 테스트가 강제되는 RestDocs를 활용하여 안정적인 API 문서 제공 
-
-          3.2) 도메인별로 예외를 쉽게 구별하도록 Exception 클래스 리팩토링 
-
-
-          4) 문제 해결 경험 
-
-          4.1) 인수테스트에서 테스트 격리하기 
-          - 랜덤포트를 사용하면서 롤백이 안되는 문제를 TRUNCATE 쿼리를 사용하여 해결 
-          - 그 결과 격리된 상태에서 인수테스트 수행 가능해짐
-
-
-          상세 내용 
-          - [Wiki](https://github.com/TWOGATH3R/twogather-web-backend/wiki)
+          <li style="list-style-type:disc">프로젝트 기획 및 설계, DB설계, API개발 및 인수테스트, 단위테스트 진행, 쿼리 작성 및 테스트, 배포 자동화, 문서화</li></ul><ul id="178f4e64-9277-4541-874d-2e8b40bb4baf" class="bulleted-list"><li style="list-style-type:disc"><strong>성능최적화(진행중)</strong><ul id="59358007-b2c4-4db8-a36d-ec20ed60b845" class="bulleted-list"><li style="list-style-type:circle">프로젝트가 실제 서비스된다고 가정하고 특정 수준에서의 성능을 최대한으로 개선<ul id="232cebe6-18a6-4922-a154-302582f3a551" class="bulleted-list"><li style="list-style-type:square"><strong>쿼리 튜닝을 통한 조회 성능 향상</strong><ul id="40bfd210-29ba-4596-b532-893b1a46ecf1" class="bulleted-list"><li style="list-style-type:disc">커버링 인덱스 도입·필요 없는 조인 제거</li></ul><ul id="19b8f8b4-5461-4e3f-a69d-0c7ab30c67a1" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange_background">400ms → 50ms (8배) 응답시간 개선</mark></li></ul></li></ul><ul id="2b9bcd8c-f787-4d2f-965a-1c71ea001d87" class="bulleted-list"><li style="list-style-type:square"><strong>캐시 도입으로 조회 성능 향상</strong><ul id="5c27f0a3-5a47-41ff-b516-3a7aba19236e" class="bulleted-list"><li style="list-style-type:disc">스케일 아웃 시 서버 각각이 독립적으로 세션 저장소를 가지게 됨으로써 정합성 문제 발생</li></ul><ul id="18053406-63d1-4e26-a9e3-f5ff37510fe5" class="bulleted-list"><li style="list-style-type:disc">정합성 문제의 해결방안과 캐시 도입 과정에서의 적정 캐시 만료시간에 대해 조사</li></ul><ul id="07d494e6-5132-46cc-a514-ef809359f688" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange_background">&gt; 대략 10배의 성능 향상</mark></li></ul></li></ul><ul id="fbfec60c-723a-4653-90fe-b4158454ecac" class="bulleted-list"><li style="list-style-type:square"><strong>로드밸런싱을 통한 고가용성 보장과 높은 CPU 점유율 해결</strong><ul id="06c6d2c7-0a9d-4242-99e8-aa86118d9290" class="bulleted-list"><li style="list-style-type:disc">고가용성 보장과 높은 트래픽에서의 CPU 높은 점유율 해결을 위해 로드밸런싱 도입</li></ul><ul id="dbabd5ff-2a69-42d8-bcdd-e6f7b88bcd5f" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-orange_background">&gt; CPU사용률 70% → 20% 감소  Mean Test Time값 대략 6배 감소</mark></li></ul></li></ul></li></ul></li></ul><ul id="102e97af-c052-41da-93ff-1824e43f4263" class="bulleted-list"><li style="list-style-type:disc"><strong>버그를</strong> <strong>최소화한 프로젝트</strong><ul id="930f2b27-9aaf-4907-8f61-67623df2fbea" class="bulleted-list"><li style="list-style-type:circle">테스트 코드의 복잡성을 해결하기 위한 리팩토링<ul id="91069813-d901-4453-86e8-f31ff5396e4c" class="bulleted-list"><li style="list-style-type:square">중복되는 상수를 묶어서 공통으로 관리하는 클래스 도입</li></ul><ul id="f9780dff-8793-4877-93d9-58f1ec322d01" class="bulleted-list"><li style="list-style-type:square">상속을 활용하여 공통로직을 부모에서 처리</li></ul><ul id="75ee8ac0-7e1c-4f52-93e1-9ad0145f25b1" class="bulleted-list"><li style="list-style-type:square">&gt; 가독성 향상, 재활용되는 메서드·상수 수 증가</li></ul></li></ul><ul id="82e3a3fb-9bbf-4a29-9551-134488da90c1" class="bulleted-list"><li style="list-style-type:circle">동시성 문제 해결<ul id="459d7af2-9bf5-4301-971a-6976e75bd034" class="bulleted-list"><li style="list-style-type:square">동시성문제가 발생할 수 있는 코드들을 조사해보고</li></ul><ul id="535a2f46-6f65-4347-acb6-9712a3584a45" class="bulleted-list"><li style="list-style-type:square">데이터베이스에 유니크 제약조건을 추가하는 방안으로 문제 해결</li></ul></li></ul><ul id="9d430403-e93f-4b1b-9e73-5e8ec6bd7c4f" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-orange_background">테스트 커버리지 81%</mark></li></ul></li></ul><ul id="bfb94f7d-4539-4246-808c-58e8fec5138c" class="bulleted-list"><li style="list-style-type:disc"><strong>협업하기 좋은 환경 구성하기</strong><ul id="d0267b9d-2bc8-45e8-ab02-7a217d188bf3" class="bulleted-list"><li style="list-style-type:circle">테스트가 강제되는 RestDocs를 활용하여 안정적인 API 문서 제공</li></ul><ul id="b161322f-dc1b-4a6a-903e-1b71db8bfc37" class="bulleted-list"><li style="list-style-type:circle">도메인별로 예외를 쉽게 구별하도록 Exception 클래스 리팩토링</li></ul></li></ul><ul id="57cc369a-c4a8-4c65-a536-967a34c3b91f" class="bulleted-list"><li style="list-style-type:disc"><strong>문제 해결 경험</strong><ul id="e438ae7e-9678-45b6-92dc-3864f83d8c79" class="bulleted-list"><li style="list-style-type:circle">인수테스트에서 테스트 격리하기<ul id="e348dd8e-efce-4ac5-8df3-10ea6b5a16a1" class="bulleted-list"><li style="list-style-type:square">랜덤포트를 사용하면서 롤백이 안되는 문제를 TRUNCATE 쿼리를 사용하여 해결</li></ul><ul id="05a3405f-4e6f-4ce5-b09f-a7b9056b0f11" class="bulleted-list"><li style="list-style-type:square">그 결과 격리된 상태에서 인수테스트 수행 가능해짐</li></ul></li></ul></li></ul><ul id="7d1c76d6-3392-40f7-8a3e-b14141628972" class="bulleted-list"><li style="list-style-type:disc">상세 내용 - Wiki<ul id="b6fba0e1-e1d6-46db-ac0a-2b62b1e0f5d8" class="bulleted-list"><li style="list-style-type:circle"><a href="https://github.com/TWOGATH3R/twogather-web-backend/wiki">https://github.com/TWOGATH3R/twogather-web-backend/wiki</a></li></ul></li></ul><p id="71da5a05-4292-4429-b076-279a3843e605" class="">
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
