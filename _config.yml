@@ -69,9 +69,9 @@ content:
           #github #springboot #aws #java11 #mysql #spring-data-jpa #rest-docs
           #h2 #github-action #jwt #gradle #rest-assred
         description: | # this will include new lines to allow paragraphs
-          프로젝트 기획 및 설계, DB설계, API개발 및 인수테스트, 단위테스트 진행, 쿼리 작성 및 테스트, 배포 자동화, 문서화
+          - 프로젝트 기획 및 설계, DB설계, API개발 및 인수테스트, 단위테스트 진행, 쿼리 작성 및 테스트, 배포 자동화, 문서화
 
-          1) 성능최적화(진행중) 
+          1) 성능최적화
           - 프로젝트가 실제 서비스된다고 가정하고 특정 수준에서의 성능을 최대한으로 개선  
 
           1.1) 쿼리 튜닝을 통한 조회 성능 향상 
@@ -100,16 +100,19 @@ content:
           - 테스트 커버리지 81% 
 
           3) 협업하기 좋은 환경 구성하기 
+
           3.1) 테스트가 강제되는 RestDocs를 활용하여 안정적인 API 문서 제공 
+
           3.2) 도메인별로 예외를 쉽게 구별하도록 Exception 클래스 리팩토링 
 
           4) 문제 해결 경험 
+
           4.1) 인수테스트에서 테스트 격리하기 
           - 랜덤포트를 사용하면서 롤백이 안되는 문제를 TRUNCATE 쿼리를 사용하여 해결 
           - 그 결과 격리된 상태에서 인수테스트 수행 가능해짐
 
           상세 내용 
-          [Wiki](https://github.com/TWOGATH3R/twogather-web-backend/wiki)
+          - [Wiki](https://github.com/TWOGATH3R/twogather-web-backend/wiki)
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
